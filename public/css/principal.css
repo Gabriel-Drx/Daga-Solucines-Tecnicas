@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2a2e31; /* Ajusta el color de fondo */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #E5E5E5; /* Color gris claro */
+    border-radius: 10px;
+    display: flex;
+    width: 700px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.loginleft {
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginleft h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.login-btn:hover {
+    background-color: #555;
+}
+
+.login-right {
+    background-color: #5B5B5B; /* Fondo gris oscuro */
+    padding: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media Queries para hacer la vista responsive */
+
+/* Tablets y pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .login-box {
+        width: 90%;
+        flex-direction: column; /* Cambia el layout a columna */
+    }
+
+    .loginleft {
+        padding: 20px;
+    }
+
+    .login-right {
+        padding: 20px;
+        border-radius: 0; /* Eliminamos los bordes redondeados en la vista en columna */
+    }
+
+    .login-right img {
+        width: 100%;
+    }
+}
+
+/* Pantallas móviles (teléfonos) */
+@media (max-width: 768px) {
+    .login-box {
+        width: 100%;
+        border-radius: 0; /* Elimina bordes redondeados para pantallas pequeñas */
+    }
+
+    .loginleft h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .login-btn {
+        font-size: 16px;
+    }
+
+    .login-right img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 10px;
+    }
+
+    .loginleft h2 {
+        font-size: 18px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+    }
+
+    .login-right img {
+        width: 100%;
+    }
+}
